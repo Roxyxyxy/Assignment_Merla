@@ -1,0 +1,276 @@
+/* Navbar */
+.navbar-red {
+  background-color: rgb(198, 8, 0);
+  height: 86px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Barra nera sotto la navbar */
+.black-line {
+  width: 100%;
+  height: 20px;
+  background-color: black;
+}
+
+/* Contenitore menu */
+.menu-container {
+  display: inline-flex;
+  align-items: center;
+  padding: 3px 7px;
+  background-color: transparent;
+  margin-right: 20px;
+  margin-left: 0 !important;
+}
+
+/* Pulsante */
+.menu-container .btn {
+  width: 111px;
+  height: 31px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+  border-radius: 2px;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  padding: 0;
+}
+
+/* Effetto hover: cambia sfondo e colore del testo */
+.menu-container .btn:hover {
+  background-color: white !important;
+  color: black !important;
+  border-color: white !important;
+}
+
+/* Stato attivo: rimane bianco con testo nero */
+.menu-container .btn:active,
+.menu-container .btn:focus {
+  background-color: white !important;
+  color: black !important;
+  border-color: white !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+/* Stile per l'icona del menu */
+.menu-icon {
+  display: inline-block;
+  width: 18px;
+  height: 2px;
+  background-color: white;
+  position: relative;
+}
+
+.menu-icon::before,
+.menu-icon::after {
+  content: '';
+  position: absolute;
+  width: 18px;
+  height: 2px;
+  background-color: white;
+  left: 0;
+}
+
+/* Rimosso qualsiasi transizione o animazione */
+.menu-container .btn:hover,
+.menu-container .btn:focus {
+  background-color: transparent;
+  transform: none;
+  box-shadow: none;
+}
+
+/* Stile per l'icona del menu */
+.bi-list {
+  font-size: 24px;
+}
+
+/* Stile per l'icona dell'hamburger */
+.menu-container .bi-list {
+  font-size: 20px !important;
+  line-height: 1;
+}
+
+/* Text next to menu */
+.menu-container .text-white {
+  font-size: 14px;
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Remove dropdown arrow */
+.dropdown-toggle::after {
+  display: none !important;
+}
+
+/* Stile per il menu a tendina */
+.dropdown-menu-fullscreen {
+  position: absolute !important;
+  top: calc(100% - 12px) !important;
+  left: 20px !important;
+  width: 320px;
+  max-height: 623px;
+  overflow-y: auto;
+  background-color: white;
+  border: 2px solid grey;
+  border-radius: 5px;
+  transform-origin: top;
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  z-index: 1050;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Stile per i link delle sezioni */
+.nav-link-sezione1 {
+  color: rgb(0, 0, 0);
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 5px;
+  display: block;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.nav-link-sezione2,
+.nav-link-sezione3 {
+  color: grey;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 5px;
+  display: block;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.nav-link-sezione1:hover,
+.nav-link-sezione2:hover,
+.nav-link-sezione3:hover {
+  background-color: #f0f0f0;
+  transition: background-color 0.3s ease;
+}
+
+/* Stile per le icone accanto ai link */
+.nav-link-sezione3 i,
+.email-newsletter i,
+.official-store i,
+.home-delivery i,
+.tips i {
+  margin-right: 8px;
+}
+
+/* Stile per Email Newsletters, Official Store, Home Delivery e Tips */
+.email-newsletter,
+.official-store,
+.home-delivery,
+.tips {
+  display: flex;
+  align-items: center;
+  color: grey;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 5px;
+}
+
+/* Stile per il pulsante Log In */
+.login-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  border-radius: 5px;
+  padding: 5px;
+  width: 100%;
+  height: 40px;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  border: 2px solid black;
+  box-sizing: border-box;
+}
+
+.login-button i {
+  margin-right: 8px;
+}
+
+/* Stile per la lente di ingrandimento */
+.nav-link .bi-search {
+  font-size: 24px !important;
+  margin-right: 20px;
+  margin-left: 0 !important;
+}
+
+/* Stile per l'icona della posta */
+.nav-link .bi-envelope-fill {
+  font-size: 26px !important;
+  width: 33px;
+  height: 26px;
+  margin-right: 0;
+  margin-left: -6px !important;
+}
+
+/* Stile per la white-line */
+.white-line {
+  width: 100%;
+  height: 40px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  position: relative;
+}
+
+/* Bordo sfumato sempre visibile sotto la white-line */
+.white-line::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 100%;
+  height: 10px;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(255, 255, 255, 0));
+}
+
+/* Stile per i link nella white-line */
+.white-line-link {
+  color: black;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 5px;
+  position: relative;
+  font-family: 'Montserrat', sans-serif;
+  transition: color 0.3s ease;
+}
+
+/* Effetto hover: bordo rosso sotto */
+.white-line-link:hover::after,
+.white-line-link:focus::after {
+  content: '';
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: red;
+}
+
+/* Stato attivo: bordo rosso rimane */
+.white-line-link:active::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: red;
+}
