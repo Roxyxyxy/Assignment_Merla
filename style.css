@@ -1,4 +1,7 @@
-/* Navbar */
+/* ==========================================================================
+   1. NAVBAR ROSSA
+   ========================================================================== */
+/* Navbar rossa */
 .navbar-red {
   background-color: rgb(198, 8, 0);
   height: 86px;
@@ -8,20 +11,16 @@
   justify-content: space-between;
 }
 
-/* Barra nera sotto la navbar */
-.black-line {
-  width: 100%;
-  height: 20px;
-  background-color: black;
-}
-
+/* ==========================================================================
+   2. MENU E DROPDOWN
+   ========================================================================== */
 /* Contenitore menu */
 .menu-container {
   display: inline-flex;
   align-items: center;
   padding: 3px 7px;
   background-color: transparent;
-  margin-right: 20px;
+  margin-right: 0px;
   margin-left: 0 !important;
 }
 
@@ -34,7 +33,7 @@
   justify-content: center;
   background-color: transparent;
   color: white;
-  border: 2px solid white;
+  border: 2px solid white !important;
   border-radius: 2px;
   font-size: 14px;
   font-weight: bold;
@@ -60,7 +59,14 @@
   box-shadow: none !important;
 }
 
-/* Stile per l'icona del menu */
+/* Stile per l'icona del menu e dell'hamburger */
+.menu-icon, 
+.menu-container .bi-list, 
+.bi-list {
+  font-size: 20px !important;
+  line-height: 1;
+}
+
 .menu-icon {
   display: inline-block;
   width: 18px;
@@ -79,26 +85,7 @@
   left: 0;
 }
 
-/* Rimosso qualsiasi transizione o animazione */
-.menu-container .btn:hover,
-.menu-container .btn:focus {
-  background-color: transparent;
-  transform: none;
-  box-shadow: none;
-}
-
-/* Stile per l'icona del menu */
-.bi-list {
-  font-size: 24px;
-}
-
-/* Stile per l'icona dell'hamburger */
-.menu-container .bi-list {
-  font-size: 20px !important;
-  line-height: 1;
-}
-
-/* Text next to menu */
+/* testo accanto al menu */
 .menu-container .text-white {
   font-size: 14px;
   font-weight: bold;
@@ -129,7 +116,7 @@
 
 /* Stile per i link delle sezioni */
 .nav-link-sezione1 {
-  color: rgb(0, 0, 0);
+  color: black;
   font-size: 16px;
   font-weight: bold;
   text-decoration: none;
@@ -201,22 +188,147 @@
   margin-right: 8px;
 }
 
-/* Stile per la lente di ingrandimento */
-.nav-link .bi-search {
-  font-size: 24px !important;
-  margin-right: 20px;
-  margin-left: 0 !important;
+/* ==========================================================================
+   3. BOTTONE LENTE DI RICERCA
+   ========================================================================== */
+/* Stile per il bottone della lente */
+.lente-btn-outline-light.d-flex.align-items-center {
+  border: none;
+  background-color: transparent;
+  font-size: 24px;
+  color: white;
+  padding-right: 10px;
 }
 
+/* Stile per la barra di ricerca */
+.search-wrapper {
+  padding: 15px 0;
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.search-icon {
+  padding: 0 15px;
+  font-size: 18px;
+  color: #777;
+  font-size: 24px;
+  margin-right: 20px;
+  margin-left: 0;
+}
+
+.search-input {
+  flex: 1;
+  height: 40px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  padding: 0 10px;
+}
+
+.search-button {
+  height: 40px;
+  background-color: rgb(198, 8, 0);
+  color: white;
+  border: none;
+  padding: 0 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* ==========================================================================
+   4. ICONA DELLA POSTA
+   ========================================================================== */
 /* Stile per l'icona della posta */
 .nav-link .bi-envelope-fill {
-  font-size: 26px !important;
+  font-size: 26px;
   width: 33px;
   height: 26px;
   margin-right: 0;
-  margin-left: -6px !important;
+  margin-left: 6px;
 }
 
+/* Hover effect per le icone nella navbar */
+.nav-link .bi-search,
+.nav-link .bi-envelope-fill {
+  color: white;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover .bi-search,
+.nav-link:hover .bi-envelope-fill {
+  color: #cccccc; /* Grigio chiaro quando ci passi sopra */
+}
+
+/* ==========================================================================
+   5. BARRA NERA
+   ========================================================================== */
+/* inizialmente quando ho visto per la prima volta il sito c'era una riga nera vuota e una nav
+bianca con diversi argomenti, ultimamente appare solo la nav nera con dentro argomenti,
+quindi al momento li ho messi entrambi e prima di consegnare il progetto vedrò quale
+appare in quel momento e deciderò in base a quello qual è la più adatta */
+
+/* Barra nera sotto la navbar */
+.black-line {
+  width: 100%;
+  height: 35px;
+  background-color: black;
+  display: flex;
+  align-items: center; /* Centra verticalmente il contenuto */
+  justify-content: center; /* Centra orizzontalmente il contenuto */
+}
+
+/* Stile per il menu nella riga nera */
+.black-line-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Centra verticalmente il testo */
+  gap: 10px; /* Spaziatura tra gli elementi */
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.black-line-menu li {
+  display: inline;
+  position: relative;
+}
+
+.black-line-menu li::after {
+  content: '|'; /* Aggiunge il separatore */
+  color: white; /* Colore del separatore */
+  margin-left: 10px; /* Spaziatura a sinistra del separatore */
+}
+
+.black-line-menu li:last-child::after {
+  content: ''; /* Rimuove il separatore dall'ultimo elemento */
+}
+
+.black-line-menu a {
+  color: white;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+  transition: all 0.3s ease;
+}
+
+.black-line-menu a:hover,
+.black-line-menu a:focus {
+  text-decoration: underline;
+}
+
+.black-line-menu a:active {
+  text-decoration: underline;
+  color: #ff0000; /* Cambia colore se necessario */
+}
+
+/* ==========================================================================
+   6. WHITE LINE (commentata nell'HTML)
+   ========================================================================== */
 /* Stile per la white-line */
 .white-line {
   width: 100%;
@@ -274,3 +386,154 @@
   height: 4px;
   background-color: red;
 }
+
+/* ==========================================================================
+   7. SEZIONE PUBBLICITÀ
+   ========================================================================== */
+/* Stile per il nav-ads */
+.nav-ads {
+  width: 100%;
+  height: 98px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  margin: 0 auto;
+}
+
+.ads-container {
+  width: 1044px; 
+  padding: 30px 0 10px 0; 
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  border-bottom: #000000 solid 1px;
+}
+
+.ad-img {
+  width: 220px;
+  height: 60px;
+}
+
+.ad-separator {
+  display: inline-block;
+  width: 0.1px; 
+  height: 50px; 
+  background-color: #000000; 
+  margin: 0 20px; 
+}
+
+/* ==========================================================================
+   8. LINEA ROSSA
+   ========================================================================== */
+/* Linea rossa separatrice */
+.red-line {
+  width: 100%;
+  height: 4.8px;
+  background-color: rgb(198, 8, 0);
+  margin: 20px 0;
+}
+
+/* ==========================================================================
+   9. SOCIAL BAR
+   ========================================================================== */
+/* Stile per la barra social */
+.social-bar {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 10px 0 10px 0;
+}
+
+.social-container {
+  width: 1040px; 
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0px;
+  margin: 0 auto; 
+}
+
+.social-icons {
+  display: flex;
+  gap: 5px;
+  margin-left: 10px; 
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 35px;
+  height: 35px;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.social-link:hover {
+  color: rgb(198, 8, 0);
+}
+
+.social-link i {
+  font-size: 25px;
+}
+
+/* ==========================================================================
+   10. FOOTER
+   ========================================================================== */
+/* Stile per il footer */
+.footer {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 16px; 
+  padding: 20px 0; 
+  font-size: 12px;
+  background-color: #ffffff;
+  color: #000000;
+  text-transform: uppercase;
+  width: 1044px;
+  min-height: 338px;
+  margin: 0 auto; 
+  box-sizing: border-box;
+}
+
+.footer h4 {
+  margin-bottom: 8px;
+  font-weight: bold;
+  font-size: 12px;
+  color: #000000;
+  text-transform: uppercase; 
+}
+
+.footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer li {
+  margin-bottom: 5px; 
+  color: #585858;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.footer-bottom {
+  margin: 0 auto;
+  font-size: 12px;
+  padding: 16px 0 10px 0;
+  width: 1044px; 
+  text-align: center;
+  color: #555555;
+  background-color: #ffffff;
+  text-transform: none;
+  border-top: #dfdfdf solid 1px;
+}
+
+.footer-logo-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
