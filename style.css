@@ -199,9 +199,74 @@
   color: white;
   padding-right: 10px;
 }
+/* Box di ricerca a larghezza intera */
+.dropdown-menu.dropdown-lente-fullscreen {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  left: 0;
+  right: 0;
+  padding: 0;
+  margin: 35px auto 0 auto;
+  border: none;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Contenitore della barra di ricerca centrato */
+.search-wrapper {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  height: auto;
+  padding: 15px 0;
+}
+
+/* Box di ricerca con stile migliorato */
+.search-box {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  border: none; 
+  background-color: white;
+}
+
+/* Contenitore per lente e input con bordo completamente arrotondato */
+.search-input-container {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  border: 2px solid #000000; 
+  border-radius: 40px; 
+  overflow: hidden;
+  margin-right: 10px; 
+  height: 58px;
+}
+
+/* Icona della lente */
+.search-icon {
+  padding: 0 15px;
+  font-size: 24px;
+  color: #ff0000;
+  margin-right: 0;
+}
+
+/* Campo di input */
+.search-input {
+  flex: 1;
+  height: 50px;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  padding: 0 15px;
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+}
+
 
 /* Stile per la barra di ricerca */
 .search-wrapper {
+  width: 896px;
+  height: 100px;
   padding: 15px 0;
 }
 
@@ -213,8 +278,7 @@
 
 .search-icon {
   padding: 0 15px;
-  font-size: 18px;
-  color: #777;
+  color: #ff0000;
   font-size: 24px;
   margin-right: 20px;
   margin-left: 0;
@@ -223,20 +287,29 @@
 .search-input {
   flex: 1;
   height: 40px;
+
   border: none;
   outline: none;
   font-size: 16px;
   padding: 0 10px;
 }
+/* Pulsante Search */
 
+.search-button:hover {
+  background-color: #ff1b1b;
+}
 .search-button {
-  height: 40px;
+  width: 135px;
+  height: 60px;
   background-color: rgb(198, 8, 0);
   color: white;
   border: none;
-  padding: 0 20px;
+  padding: 0 25px;
   font-weight: bold;
-  cursor: pointer;
+  cursor: pointer;  
+  border-radius: 40px; 
+  font-size: 16px;
+  transition: background-color 0.3s ease;
 }
 
 /* ==========================================================================
@@ -260,7 +333,7 @@
 
 .nav-link:hover .bi-search,
 .nav-link:hover .bi-envelope-fill {
-  color: #cccccc; /* Grigio chiaro quando ci passi sopra */
+  color: #cccccc; 
 }
 
 /* ==========================================================================
@@ -277,16 +350,16 @@ appare in quel momento e deciderò in base a quello qual è la più adatta */
   height: 35px;
   background-color: black;
   display: flex;
-  align-items: center; /* Centra verticalmente il contenuto */
-  justify-content: center; /* Centra orizzontalmente il contenuto */
+  align-items: center; 
+  justify-content: center; 
 }
 
 /* Stile per il menu nella riga nera */
 .black-line-menu {
   display: flex;
   justify-content: center;
-  align-items: center; /* Centra verticalmente il testo */
-  gap: 10px; /* Spaziatura tra gli elementi */
+  align-items: center; 
+  gap: 10px; 
   list-style: none;
   margin: 0;
   padding: 0;
@@ -298,13 +371,13 @@ appare in quel momento e deciderò in base a quello qual è la più adatta */
 }
 
 .black-line-menu li::after {
-  content: '|'; /* Aggiunge il separatore */
-  color: white; /* Colore del separatore */
-  margin-left: 10px; /* Spaziatura a sinistra del separatore */
+  content: '|'; 
+  color: white; 
+  margin-left: 10px; 
 }
 
 .black-line-menu li:last-child::after {
-  content: ''; /* Rimuove il separatore dall'ultimo elemento */
+  content: ''; 
 }
 
 .black-line-menu a {
@@ -323,7 +396,7 @@ appare in quel momento e deciderò in base a quello qual è la più adatta */
 
 .black-line-menu a:active {
   text-decoration: underline;
-  color: #ff0000; /* Cambia colore se necessario */
+  color: #ff0000; 
 }
 
 /* ==========================================================================
