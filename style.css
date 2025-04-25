@@ -477,6 +477,7 @@ appare in quel momento e deciderò in base a quello qual è la più adatta */
 .ads-container {
   width: 1044px; 
   padding: 30px 0 10px 0; 
+  margin-bottom: 20px;
   display: flex;
   justify-content: space-between; 
   align-items: center;
@@ -497,7 +498,45 @@ appare in quel momento e deciderò in base a quello qual è la più adatta */
 }
 
 /* ==========================================================================
-   8. LINEA ROSSA
+   8. MAIN CONTENT
+   ========================================================================== */
+/* Stile per il contenuto principale */
+main {
+  display: flex; 
+  justify-content: space-between; 
+  padding: 30px 20px;
+  margin: 0 88px 0 88px; 
+  box-sizing: border-box;
+}
+
+/* Zona sinistra: Sezioni con articoli */
+.main-content {
+  width: 734px; 
+}
+
+/* Articoli */
+.article {
+  width: 734px;
+  height: 801px;
+}
+.first-article-title {
+  font-size: 70px;
+  font-weight: bold;
+  color: rgb(198, 8, 0) ;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Zona destra: Aside */
+aside {
+  width: 300px;
+  box-sizing: border-box;
+  position: sticky; /* Rende l'aside sticky */
+  top: 20px; /* Distanza dall'inizio della pagina quando diventa sticky */
+}
+
+/* ==========================================================================
+   9. LINEA ROSSA
    ========================================================================== */
 /* Linea rossa separatrice */
 .red-line {
@@ -508,7 +547,7 @@ appare in quel momento e deciderò in base a quello qual è la più adatta */
 }
 
 /* ==========================================================================
-   9. SOCIAL BAR
+   10. SOCIAL BAR
    ========================================================================== */
 /* Stile per la barra social */
 .social-bar {
@@ -552,7 +591,7 @@ appare in quel momento e deciderò in base a quello qual è la più adatta */
 }
 
 /* ==========================================================================
-   10. FOOTER
+   11. FOOTER
    ========================================================================== */
 /* Stile per il footer */
 .footer {
@@ -609,4 +648,3 @@ appare in quel momento e deciderò in base a quello qual è la più adatta */
   justify-content: center;
   margin-bottom: 30px;
 }
-

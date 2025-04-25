@@ -25,181 +25,235 @@
   </head>
 
   <body>
-    <nav class="navbar navbar-expand-lg navbar-red">
-      <div class="container d-flex align-items-center justify-content-between">
-        <!-- Colonna sinistra -->
-        <div class="d-flex align-items-center">
-          <!-- Contenitore per il menu -->
-          <div class="menu-container">
-            <!-- Bottone per aprire il menu a tendina -->
-            <button
-              type="button"
-              class="btn btn-outline-light d-flex align-items-center"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
-              aria-label="Menu sezioni"
-            >
-              <i class="bi bi-list"></i>
-              <span class="ms-2">SECTIONS</span>
-            </button>
-            <!-- Contenitore del menu a tendina -->
-            <div class="dropdown-menu dropdown-menu-fullscreen">
-              <!-- Menu a tendina con classi Bootstrap per stile e comportamento -->
-              <ul class="list-unstyled p-3">
-                <!-- Lista non ordinata con padding interno -->
-                <!-- Sezione 1 -->
-                <li><a class="nav-link-sezione1" href="#">US News</a></li>
-                <li><a class="nav-link-sezione1" href="#">World News</a></li>
-                <li><a class="nav-link-sezione1" href="#">Page Six</a></li>
-                <li><a class="nav-link-sezione1" href="#">Sports</a></li>
-                <li><a class="nav-link-sezione1" href="#">Post Sports+</a></li>
-                <li>
-                  <a class="nav-link-sezione1" href="#">Sports Betting</a>
-                </li>
-                <li><a class="nav-link-sezione1" href="#">Business</a></li>
-                <li><a class="nav-link-sezione1" href="#">Opinion</a></li>
-                <li><a class="nav-link-sezione1" href="#">Entertainment</a></li>
-                <li><a class="nav-link-sezione1" href="#">Shopping</a></li>
-                <li><a class="nav-link-sezione1" href="#">Lifestyle</a></li>
-                <li><a class="nav-link-sezione1" href="#">Health</a></li>
-                <li><a class="nav-link-sezione1" href="#">Real Estate</a></li>
-                <li><a class="nav-link-sezione1" href="#">Alexa</a></li>
-                <li><a class="nav-link-sezione1" href="#">Media</a></li>
-                <li><a class="nav-link-sezione1" href="#">Tech</a></li>
-                <li><a class="nav-link-sezione1" href="#">Science</a></li>
-                <li><a class="nav-link-sezione1" href="#">Astrology</a></li>
-                <li><a class="nav-link-sezione1" href="#">Video</a></li>
-                <li><a class="nav-link-sezione1" href="#">Photos</a></li>
-                <hr />
-                <!-- Sezione 2 -->
-                <li><a class="nav-link-sezione2" href="#">Today's Paper</a></li>
-                <li><a class="nav-link-sezione2" href="#">Covers</a></li>
-                <li><a class="nav-link-sezione2" href="#">Columnists</a></li>
-                <li><a class="nav-link-sezione2" href="#">Horoscopes</a></li>
-                <li>
-                  <a class="nav-link-sezione2" href="#">Crosswords & Games</a>
-                </li>
-                <li><a class="nav-link-sezione2" href="#">Sports Odds</a></li>
-                <li><a class="nav-link-sezione2" href="#">Podcast</a></li>
-                <li><a class="nav-link-sezione2" href="#">Careers</a></li>
-                <hr />
-                <!-- Sezione 3 -->
-                <li>
-                  <a class="nav-link-sezione3 email-newsletter" href="#">
-                    <i class="bi bi-envelope"></i> Email Newsletters
-                  </a>
-                </li>
-                <li>
-                  <a class="nav-link-sezione3 official-store" href="#">
-                    <i class="bi bi-cart3"></i> Official Store
-                  </a>
-                </li>
-                <li>
-                  <a class="nav-link-sezione3 home-delivery" href="#">
-                    <i class="bi bi-book"></i> Home Delivery
-                  </a>
-                </li>
-                <li>
-                  <a class="nav-link-sezione3 tips" href="#">
-                    <i class="bi bi-eye"></i> Tips
-                  </a>
-                </li>
-                <hr />
-                <!-- Login -->
-                <li>
-                  <button type="button" class="login-button">
-                    <i class="bi bi-person-fill"></i> Log In
-                  </button>
-                </li>
-              </ul>
-            </div>
-          </div>
-
-          <!-- Bottone della lente di ingrandimento -->
-          <button
-            type="button"
-            class="btn lente-btn-outline-light d-flex align-items-center"
-            data-bs-toggle="dropdown"
-            aria-expanded="false"
-            aria-label="Toggle Search"
-          >
-            <i class="bi bi-search"></i>
-          </button>
-
-          <!-- Contenitore della barra di ricerca -->
-          <div class="dropdown-menu dropdown-lente-fullscreen">
-            <div class="search-wrapper">
-              <div class="search-box">
-                <div class="search-input-container">
-                  <i class="bi bi-search search-icon"></i>
-                  <input type="text" class="search-input" placeholder="Type to Search">
-                </div>
-                <button class="search-button">SEARCH</button>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-red">
+        <div
+          class="container d-flex align-items-center justify-content-between"
+        >
+          <!-- Colonna sinistra -->
+          <div class="d-flex align-items-center">
+            <!-- Contenitore per il menu -->
+            <div class="menu-container">
+              <!-- Bottone per aprire il menu a tendina -->
+              <button
+                type="button"
+                class="btn btn-outline-light d-flex align-items-center"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                aria-label="Menu sezioni"
+              >
+                <i class="bi bi-list"></i>
+                <span class="ms-2">SECTIONS</span>
+              </button>
+              <!-- Contenitore del menu a tendina -->
+              <div class="dropdown-menu dropdown-menu-fullscreen">
+                <!-- Menu a tendina con classi Bootstrap per stile e comportamento -->
+                <ul class="list-unstyled p-3">
+                  <!-- Lista non ordinata con padding interno -->
+                  <!-- Sezione 1 -->
+                  <li><a class="nav-link-sezione1" href="#">US News</a></li>
+                  <li><a class="nav-link-sezione1" href="#">World News</a></li>
+                  <li><a class="nav-link-sezione1" href="#">Page Six</a></li>
+                  <li><a class="nav-link-sezione1" href="#">Sports</a></li>
+                  <li>
+                    <a class="nav-link-sezione1" href="#">Post Sports+</a>
+                  </li>
+                  <li>
+                    <a class="nav-link-sezione1" href="#">Sports Betting</a>
+                  </li>
+                  <li><a class="nav-link-sezione1" href="#">Business</a></li>
+                  <li><a class="nav-link-sezione1" href="#">Opinion</a></li>
+                  <li>
+                    <a class="nav-link-sezione1" href="#">Entertainment</a>
+                  </li>
+                  <li><a class="nav-link-sezione1" href="#">Shopping</a></li>
+                  <li><a class="nav-link-sezione1" href="#">Lifestyle</a></li>
+                  <li><a class="nav-link-sezione1" href="#">Health</a></li>
+                  <li><a class="nav-link-sezione1" href="#">Real Estate</a></li>
+                  <li><a class="nav-link-sezione1" href="#">Alexa</a></li>
+                  <li><a class="nav-link-sezione1" href="#">Media</a></li>
+                  <li><a class="nav-link-sezione1" href="#">Tech</a></li>
+                  <li><a class="nav-link-sezione1" href="#">Science</a></li>
+                  <li><a class="nav-link-sezione1" href="#">Astrology</a></li>
+                  <li><a class="nav-link-sezione1" href="#">Video</a></li>
+                  <li><a class="nav-link-sezione1" href="#">Photos</a></li>
+                  <hr />
+                  <!-- Sezione 2 -->
+                  <li>
+                    <a class="nav-link-sezione2" href="#">Today's Paper</a>
+                  </li>
+                  <li><a class="nav-link-sezione2" href="#">Covers</a></li>
+                  <li><a class="nav-link-sezione2" href="#">Columnists</a></li>
+                  <li><a class="nav-link-sezione2" href="#">Horoscopes</a></li>
+                  <li>
+                    <a class="nav-link-sezione2" href="#">Crosswords & Games</a>
+                  </li>
+                  <li><a class="nav-link-sezione2" href="#">Sports Odds</a></li>
+                  <li><a class="nav-link-sezione2" href="#">Podcast</a></li>
+                  <li><a class="nav-link-sezione2" href="#">Careers</a></li>
+                  <hr />
+                  <!-- Sezione 3 -->
+                  <li>
+                    <a class="nav-link-sezione3 email-newsletter" href="#">
+                      <i class="bi bi-envelope"></i> Email Newsletters
+                    </a>
+                  </li>
+                  <li>
+                    <a class="nav-link-sezione3 official-store" href="#">
+                      <i class="bi bi-cart3"></i> Official Store
+                    </a>
+                  </li>
+                  <li>
+                    <a class="nav-link-sezione3 home-delivery" href="#">
+                      <i class="bi bi-book"></i> Home Delivery
+                    </a>
+                  </li>
+                  <li>
+                    <a class="nav-link-sezione3 tips" href="#">
+                      <i class="bi bi-eye"></i> Tips
+                    </a>
+                  </li>
+                  <hr />
+                  <!-- Login -->
+                  <li>
+                    <button type="button" class="login-button">
+                      <i class="bi bi-person-fill"></i> Log In
+                    </button>
+                  </li>
+                </ul>
               </div>
             </div>
+
+            <!-- Bottone della lente di ingrandimento -->
+            <button
+              type="button"
+              class="btn lente-btn-outline-light d-flex align-items-center"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+              aria-label="Toggle Search"
+            >
+              <i class="bi bi-search"></i>
+            </button>
+
+            <!-- Contenitore della barra di ricerca -->
+            <div class="dropdown-menu dropdown-lente-fullscreen">
+              <div class="search-wrapper">
+                <div class="search-box">
+                  <div class="search-input-container">
+                    <i class="bi bi-search search-icon"></i>
+                    <input
+                      type="text"
+                      class="search-input"
+                      placeholder="Type to Search"
+                    />
+                  </div>
+                  <button class="search-button">SEARCH</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Casella delle lettere -->
+            <a href="#" class="nav-link text-white">
+              <i class="bi bi-envelope-fill"></i>
+            </a>
           </div>
 
-          <!-- Casella delle lettere -->
-          <a href="#" class="nav-link text-white">
-            <i class="bi bi-envelope-fill"></i>
+          <!-- Immagine centrale -->
+          <a href="#" class="navbar-brand mx-auto">
+            <img
+              src="https://placehold.co/369x55"
+              alt="Logo"
+              width="369"
+              height="55"
+            />
+          </a>
+
+          <!-- Immagine a destra -->
+          <a href="#" class="navbar-brand">
+            <img
+              src="https://placehold.co/206x40"
+              alt="Logo Right"
+              width="206"
+              height="40"
+            />
           </a>
         </div>
+      </nav>
 
-        <!-- Immagine centrale -->
-        <a href="#" class="navbar-brand mx-auto">
+      <div class="black-line">
+        <ul class="black-line-menu">
+          <li><a href="#">PAGE SIX</a></li>
+          <li><a href="#">SPORTS</a></li>
+          <li><a href="#">METRO</a></li>
+          <li><a href="#">OPINION</a></li>
+          <li><a href="#">BUSINESS</a></li>
+        </ul>
+      </div>
+      <!-- 
+      <div class="white-line">
+        <div class="white-line d-flex align-items-center justify-content-center">
+          <a href="#" class="white-line-link">US News</a>
+          <a href="#" class="white-line-link">Metro</a>
+          <a href="#" class="white-line-link">Long Island</a>
+          <a href="#" class="white-line-link">Politics</a>
+          <a href="#" class="white-line-link">World News</a>
+        </div>
+      </div>-->
+
+      <div class="nav-ads">
+        <div class="ads-container">
           <img
-            src="https://placehold.co/369x55"
-            alt="Logo"
-            width="369"
-            height="55"
+            src="https://placehold.co/220x50"
+            alt="Advertisement 1"
+            class="ad-img"
           />
-        </a>
-
-        <!-- Immagine a destra -->
-        <a href="#" class="navbar-brand">
+          <span class="ad-separator"></span>
           <img
-            src="https://placehold.co/206x40"
-            alt="Logo Right"
-            width="206"
-            height="40"
+            src="https://placehold.co/220x50"
+            alt="Advertisement 2"
+            class="ad-img"
           />
-        </a>
+          <span class="ad-separator"></span>
+          <img
+            src="https://placehold.co/220x50"
+            alt="Advertisement 3"
+            class="ad-img"
+          />
+        </div>
       </div>
-    </nav>
+    </header>
 
-    <div class="black-line">
-      <ul class="black-line-menu">
-        <li><a href="#">PAGE SIX</a></li>
-        <li><a href="#">SPORTS</a></li>
-        <li><a href="#">METRO</a></li>
-        <li><a href="#">OPINION</a></li>
-        <li><a href="#">BUSINESS</a></li>
-      </ul>
-    </div>
-    <!-- 
-    <div class="white-line">
-      <div class="white-line d-flex align-items-center justify-content-center">
-        <a href="#" class="white-line-link">US News</a>
-        <a href="#" class="white-line-link">Metro</a>
-        <a href="#" class="white-line-link">Long Island</a>
-        <a href="#" class="white-line-link">Politics</a>
-        <a href="#" class="white-line-link">World News</a>
-      </div>
-    </div>-->
+    <main>
+      <!-- Zona sinistra: Sezioni con articoli -->
+      <div class="main-content">
+        <article class="first-article">
+          <h1 class="first-article-title"> TITOLO GANZO</h1>
+          <div class="article-image-container">
+            <img
+              src="https://placehold.co/734x489"
+              alt="Article Image"
+              class="article-image"
+            />
+          </div>
+          <h2 class
 
-    <div class="nav-ads">
-      <div class="ads-container">
-        <img src="https://placehold.co/220x50" alt="Advertisement 1" class="ad-img" />
-        <span class="ad-separator"></span>
-        <img src="https://placehold.co/220x50" alt="Advertisement 2" class="ad-img" />
-        <span class="ad-separator"></span>
-        <img src="https://placehold.co/220x50" alt="Advertisement 3" class="ad-img" />
+        </article>
       </div>
-    </div>
-    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-    </div>
-    <div class="red-line"></div>
-    <div>
+
+      <!-- Zona destra: Aside -->
+      <aside>
+        <img
+          src="https://placehold.co/300x603"
+          alt="Placeholder"
+          width="300"
+          height="603"
+        />
+      </aside>
+    </main>
+
+    <footer>
+      <div class="red-line"></div>
+
       <!-- Social links bar -->
       <div class="social-bar">
         <div class="social-container">
@@ -230,9 +284,7 @@
           </div>
         </div>
       </div>
-    </div>
 
-    <footer>
       <div class="footer">
         <div>
           <h4>SECTIONS & FEATURES</h4>
@@ -333,7 +385,7 @@
         Subscription Terms | Privacy Notice | Sitemap<br />
         <strong>Your California Privacy Rights</strong>
       </div>
-      </div>
+
       <div class="footer-logo-container">
         <img
           src="https://placehold.co/187x26"
