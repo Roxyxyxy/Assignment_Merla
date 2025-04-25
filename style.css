@@ -11,6 +11,13 @@
   justify-content: space-between;
 }
 
+.container.d-flex.align-items-center.justify-content-between {
+  padding: 0;
+  margin: 0;
+  max-width: 1280px;
+  width: 100%;
+}
+
 /* ==========================================================================
    2. MENU E DROPDOWN
    ========================================================================== */
@@ -527,6 +534,32 @@ main {
   font-family: 'Montserrat', sans-serif;
 }
 
+.article-image-container{
+  margin-bottom: 15px;
+}
+
+.titoletto1 {
+  display: flex; /* Imposta Flexbox */
+  justify-content: center; /* Centra orizzontalmente */
+  align-items: center; /* Centra verticalmente */
+  height: 100%; /* Assicura che il contenitore abbia altezza sufficiente */
+}
+
+.titoletto {
+  color: rgb(198, 8, 0);
+  font-size: 13px;
+  font-weight: 700;
+  font-style: italic; /* Rende il testo in corsivo */
+  text-transform: uppercase;
+  text-align: center; /* Centra il testo orizzontalmente */
+  letter-spacing: 1.04px;
+  line-height: 13px;
+  margin:  0;
+  border: 1px solid rgb(198, 8, 0); /* Bordo rosso intorno alla scritta */
+  box-sizing: border-box;
+  display: inline-block; /* Assicura che il bordo si adatti solo alla scritta */
+  transform: skew(-10deg); /* Inclina il bordo e il contenuto */
+}
 /* Zona destra: Aside */
 aside {
   width: 300px;
