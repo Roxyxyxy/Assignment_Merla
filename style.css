@@ -478,7 +478,7 @@ appare in quel momento e deciderò in base a quello qual è la più adatta */
   justify-content: center;
   align-items: center;
   background-color: #ffffff;
-  margin: 0 auto;
+  margin-top: 3px;
 }
 
 .ads-container {
@@ -492,13 +492,24 @@ appare in quel momento e deciderò in base a quello qual è la più adatta */
 }
 
 .ad-img {
-  width: 220px;
-  height: 60px;
+  width: 84px;
+  height: 56px;
 }
 
-.ad-separator {
+.nav-ads-text {
+  font-size: 15px;
+  font-weight: 700;
+  color: #000000;
+  text-align: left;
+  font-family: 'Montserrat', sans-serif;
+  padding-left : 3px;
+  margin-bottom:0;
+  line-height: 1.2;
+}
+
+.separator {
   display: inline-block;
-  width: 0.1px; 
+  width: 1px; 
   height: 50px; 
   background-color: #000000; 
   margin: 0 20px; 
@@ -522,50 +533,107 @@ main {
 }
 
 /* Articoli */
-.article {
+.first-article {
   width: 734px;
-  height: 801px;
+  height: auto;
 }
+
 .first-article-title {
   font-size: 70px;
   font-weight: bold;
-  color: rgb(198, 8, 0) ;
+  color: rgb(198, 8, 0);
   text-align: center;
   font-family: 'Montserrat', sans-serif;
 }
-
-.article-image-container{
+.first-article-image-container {
   margin-bottom: 15px;
 }
-
-.titoletto1 {
-  display: flex; /* Imposta Flexbox */
-  justify-content: center; /* Centra orizzontalmente */
-  align-items: center; /* Centra verticalmente */
-  height: 100%; /* Assicura che il contenitore abbia altezza sufficiente */
+.first-article-small-title-container {
+  display: flex; 
+  justify-content: center; 
+  align-items: center;
+  height: 100%; 
 }
-
-.titoletto {
+.first-article-small-title {
   color: rgb(198, 8, 0);
   font-size: 13px;
   font-weight: 700;
-  font-style: italic; /* Rende il testo in corsivo */
+  font-style: italic; 
   text-transform: uppercase;
-  text-align: center; /* Centra il testo orizzontalmente */
+  text-align: center; 
   letter-spacing: 1.04px;
   line-height: 13px;
-  margin:  0;
-  border: 1px solid rgb(198, 8, 0); /* Bordo rosso intorno alla scritta */
+  margin: 0;
+  border: 1px solid rgb(198, 8, 0); 
   box-sizing: border-box;
-  display: inline-block; /* Assicura che il bordo si adatti solo alla scritta */
-  transform: skew(-10deg); /* Inclina il bordo e il contenuto */
+  display: inline-block; 
+  transform: skew(-10deg); 
+}
+.first-article-big-title {
+  color: black; 
+  font-size: 36px; 
+  font-weight: bold; 
+  text-align: center; 
+  margin-bottom: 10px; 
+}
+.first-grid-container-titles {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+  gap: 10px; 
+  margin-top: 20px; 
+}
+.first-grid-item-article {
+  font-size: 15px;
+  font-weight: bold;
+  padding-left: 13px; 
+  text-align: left; 
+  line-height: 1.2;
+}
+/* Secondo articolo */
+.second-article {
+  margin-top: 20px;
+  margin-bottom: 20px;
+ 
+}
+
+.second-article-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 10px;
+  height: 255px;
+}
+
+.second-article-grid-item {
+  text-align: center;
+}
+
+.second-article-grid-image {
+  width: 217px;
+  height: 145px;
+}
+
+.second-article-grid-text {
+  font-size: 18px;
+  margin-top: 10px;
+  color: #000;
+  text-align: left; 
+  line-height: 1.2;
+  font-weight: 700;
+}
+.separator2 {
+  display: inline-block;
+  width: 1px; 
+  height: 255px; 
+  background-color: #373737; 
+  margin: 0; 
+  align-self: center; 
 }
 /* Zona destra: Aside */
 aside {
   width: 300px;
   box-sizing: border-box;
-  position: sticky; /* Rende l'aside sticky */
-  top: 20px; /* Distanza dall'inizio della pagina quando diventa sticky */
+  position: sticky; 
+  top: 20px; 
 }
 
 /* ==========================================================================
