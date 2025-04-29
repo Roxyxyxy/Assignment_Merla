@@ -434,7 +434,7 @@ main {
 
 /* Articoli */
 .first-article {
-  width: 734px;
+  width: 100%;
   height: auto;
 }
 
@@ -538,11 +538,6 @@ main {
 
 .second-article-grid-item {
   text-align: center;
-}
-
-.second-article-grid-image {
-  width: 217px;
-  height: 145px;
 }
 
 .second-article-grid-text {
@@ -805,7 +800,7 @@ main {
 
 /* Zona inferiore (seconda metà) */
 .sticky-aside-zone-bottom {
-  height: 100vh;
+  height: 957px;
   width: 100%;
   position: relative; 
 }
@@ -972,7 +967,7 @@ main {
 
 .social-icons {
   display: flex;
-  gap: 5px;
+  gap: 10px;
   margin-left: 10px; 
 }
 
@@ -991,7 +986,7 @@ main {
 }
 
 .social-link i {
-  font-size: 25px;
+  font-size: 35px;
 }
 
 /* ==========================================================================
@@ -1001,14 +996,14 @@ main {
 .footer {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  gap: 16px; 
+  gap: 20px; 
   padding: 20px 0; 
   font-size: 12px;
   background-color: #ffffff;
   color: #000000;
   text-transform: uppercase;
   width: 1044px;
-  min-height: 338px;
+  min-height: 337px;
   margin: 0 auto; 
   box-sizing: border-box;
 }
@@ -1028,7 +1023,7 @@ main {
 }
 
 .footer li {
-  margin-bottom: 5px; 
+  margin-bottom: 3px; 
   color: #585858;
   font-weight: bold;
   text-transform: uppercase;
@@ -1053,5 +1048,37 @@ main {
   width: 100%;
   display: flex;
   justify-content: center;
-  margin-bottom: 30px;
+  margin-bottom: 5px;
+}
+
+/* ==========================================================================
+   RESPONSIVE DESIGN - Max 1024px
+   ========================================================================== */
+@media (max-width: 1024px) {
+
+  main{
+    width: 984px;
+  }
+  .main-content{
+    width: 654px;
+  }
+  .ads-container {
+    width: 984px;
+  }
+
+  .footer {
+    max-width: 964px; 
+    max-height: 519px;
+    padding: 0;
+  }
+
+  .social-container {
+    max-width: 964px; 
+    height: 51px;     
+  }
+
+  .footer-bottom {
+    padding-top: 6px;
+  }
+
 }
