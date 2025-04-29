@@ -415,11 +415,14 @@ body {
    ========================================================================== */
 /* Stile per il contenuto principale */
 main {
-  display: flex; 
+  display: grid; 
+  grid-template-columns: 1fr 300px;
+  gap: 30px;
   justify-content: space-between; 
   padding: 30px 20px;
   margin: 0 88px 0 88px; 
   box-sizing: border-box;
+  align-items: start;
 }
 
 /* Zona sinistra: Sezioni con articoli */
@@ -768,22 +771,55 @@ main {
 }
 
 /* Zona destra: Aside */
-aside {
+.sticky-aside {
   width: 300px;
   box-sizing: border-box;
-  position: sticky; 
+  position: relative; 
   top: 20px; 
-  
+  align-items: start;
+  display: block;
+}
+
+/* Zona superiore (prima metà) */
+.sticky-aside-zone-top {
+  height: 1145px; 
+  width: 100%;
+  position: relative; 
+}
+
+.sticky-aside-top {
+  position: sticky;
+  top: 30px; 
+  width: 100%;
 }
 
 /*immagine aside*/
 .sticky-aside-image {
   width: 100%;
   height: auto;
-  padding-bottom: 20px; 
+  display:block;
+  padding-bottom: 20px;
 }
 
-/*aside social*/
+/* Zona inferiore (seconda metà) */
+.sticky-aside-zone-bottom {
+  height: 100vh;
+  width: 100%;
+  position: relative; 
+}
+
+.sticky-aside-bottom {
+  position: sticky;
+  top: 30px; 
+  width: 100%;
+}
+
+.sticky-aside-content {
+  width: 100%;
+  object-fit: cover;
+  display: block; 
+}
+
 .aside-socials {
   display: flex;
   justify-content: space-between; 
