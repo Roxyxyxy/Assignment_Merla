@@ -582,9 +582,6 @@ main {
 }
 
 .third-article-left-image {
-  width: 447px;
-  height: 298px;
-  object-fit: cover; 
   margin-bottom: 20px;
 }
 
@@ -735,9 +732,6 @@ main {
 }
 
 .fourth-article-grid-image {
-  width: 231px;
-  height: 154px;
-  object-fit: cover;
   margin-bottom: 10px;
 }
 
@@ -1058,12 +1052,17 @@ main {
 
   main{
     width: 984px;
+    padding: 30px 0;
   }
   .main-content{
     width: 654px;
   }
   .ads-container {
     width: 984px;
+  }
+
+  .third-article-left{
+    width: 367px;
   }
 
   .footer {
