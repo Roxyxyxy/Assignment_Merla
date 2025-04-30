@@ -1158,7 +1158,6 @@ main {
     width: 100%;
     max-width: 100%;
   }
-  
 
   .social-container {
     display: flex;
@@ -1184,6 +1183,91 @@ main {
     width: 100%;
     max-width: 100%;
   }
+}
 
+@media (min-width: 600px) and (max-width: 768px) {
+  .navbar-red {
+    height: 52px;
+  }
+  
+  .navbar .navbar-brand.mx-auto img {
+    width: 215px;
+    height: 32px;
+  }
+  
+  .menu-container .btn {
+    border: none !important;
+  }
+  
+  .ms-2 {
+    display: none;
+  }
 
+    .btn.btn-outline-light.d-flex.align-items-center {
+    width: 30px ;
+    height: 30px ;
+  }
+
+  .d-flex.align-items-center {
+    justify-content: flex-start;
+    padding-left: 0;
+    margin-left: 0;
+  }
+  
+  .menu-icon, 
+.menu-container .bi-list, 
+.bi-list {
+  font-size: 30px !important;
+  line-height: 1;
+}
+
+  .menu-container{
+  padding-right: 15px;
+  }
+
+  .logo-right {
+    display: none;
+  }
+
+  main {
+    grid-template-columns: 1fr;
+    padding: 30px 20px;
+    margin: 0 auto;
+    max-width: 100%;
+  }
+  
+  .main-content {
+    width: 100%;
+  }
+  
+  .sticky-aside {
+    display: none;
+  }
+  
+  .nav-ads {
+    display: none;
+  }
+  
+  .footer {
+    display: none;
+  }
+  
+  .footer-bottom {
+    width: 100%;
+  }
+  
+  .social-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    width: 100%;
+  }
+  
+  .social-icons {
+    margin-left: 0;
+    justify-content: center;
+    width: 100%;
+    margin: 10px 0;
+  }
 }
