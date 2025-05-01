@@ -28,6 +28,10 @@ img {
   width: 100%;
 }
 
+.d-flex.align-items-center{
+  padding-right: 10px;
+}
+
 /* ==========================================================================
    2. MENU E DROPDOWN
    ========================================================================== */
@@ -1240,6 +1244,94 @@ main {
     width: 100%;
   }
   
+  .second-article-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .second-article-grid-item {
+    width: 100%;
+    height: auto;
+    display: flex;
+    gap: 15px;
+    align-items: flex-start;
+    padding-bottom: 15px;
+  }
+
+  .second-article-grid-item:not(:last-child) {
+    border-bottom-color: rgb(88, 88, 88);
+    border-bottom-style: solid;
+    border-bottom-width: 0.8px;
+  }
+
+  .second-article-grid-item img {
+    width: 21%;
+    height: auto;
+    flex-shrink: 0;
+    object-fit: cover;
+  }
+  
+  .second-article-grid-text {
+    text-align: left; 
+    margin: 0;
+  }
+  
+  .separator2 {
+    display: none; 
+  }  
+  
+  .fourth-article-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .fourth-article-grid-item {
+    width: 100%;
+    height: auto;
+    display: flex;
+    gap: 15px;
+    align-items: flex-start;
+    padding-bottom: 15px;
+  }
+
+  .fourth-article-grid-item:not(:last-child) {
+    border-bottom-color: rgb(88, 88, 88);
+    border-bottom-style: solid;
+    border-bottom-width: 0.8px;
+  }
+  
+  .fourth-article-grid-image {
+    width: 21%;
+    height: auto;
+    flex-shrink: 0;
+    object-fit: cover;
+    margin-bottom: 0;
+  }
+  
+  .fourth-article-grid-item .fourth-article-grid-content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  
+  .fourth-article-grid-titoletto { RISOLVI
+    margin-bottom: 5px;
+    order: 1;
+  }
+  
+  .fourth-article-grid-subtitle {
+    margin-bottom: 5px;
+    order: 2;
+  }
+  
+  .fourth-article-grid-title {
+    margin-top: 0;
+    order: 3;
+  }
+
   .sticky-aside {
     display: none;
   }
@@ -1271,12 +1363,12 @@ main {
     margin: 10px 0;
   }
 }
-@media (min-width: 425px) and (max-width: 599px) {
+@media (min-width: 0px) and (max-width: 599px) {
 
   .navbar-red {
     height: 50px;
   }
-  
+
   .navbar .navbar-brand.mx-auto img {
     width: 201px;
     height: 30px;
@@ -1366,46 +1458,56 @@ main {
     margin: 10px 0;
   }
 
-  .black-line {
-    width: 100%;
+    .black-line {
     height: 40px;
     background-color: rgb(255, 255, 255);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    overflow-x: auto;
+    display: flex;
+    justify-content: flex-start;
   }
-
+  
+  .black-line::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .black-line-menu {
+    display: flex;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+    padding: 0 10px;
+    list-style: none;
+    justify-content: left;
+  }
+  .black-line-menu li {
+    align-items: left;
+    display: inline-block;
+  }
   .black-line-menu a {
     color: rgb(0, 0, 0);
     font-weight: 700;
+    position: relative;
+    flex-shrink: 0;
   }
   
   .black-line-menu li::after {
     color: rgb(0, 0, 0);
+    flex-shrink: 0;
   }
   
-  /* Red underline on hover/focus */
   .black-line-menu a:hover::after,
   .black-line-menu a:focus::after {
     content: '';
     position: absolute;
-    bottom: -3px;
-    left: -6px; 
+    bottom: -12.5px;
+    left: 0; 
     width: 100%;
     height: 4px;
-    background-color: red;
-  }
-  
-  /* Red underline on active state */
-  .black-line-menu a:active::after {
-    content: '';
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 0px;
-    background-color: red;
+    background-color: rgb(198,80, 0);
   }
 
   .black-line-menu a:hover,
 .black-line-menu a:focus {
   text-decoration: none;
-}
+  }
 }
